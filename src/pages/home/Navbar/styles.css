@@ -1,64 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Merriweather:wght@900&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+* {
     margin: 0;
-    padding: 0px;
+    padding: 0;
 }
-body{
-    margin: 0px;
-    /* padding: 10px; */
+
+body {
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
 }
-/* .logo{
-    margin-left: -20px;
-} */
-.bar{
+
+.bar {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2vw;
-    /* background-color: rgb(34, 26, 74); */
 }
-.components{
+
+.logo img {
+    width: 100px;
+}
+
+.components {
     margin-left: 25vw;
     margin-right: 22vw;
 }
-.components ul{
+
+.components ul {
     display: flex;
     list-style-type: none;
-    /* color: black; */
-    border: 2px solid white;
-    /* padding: 10px 20px; */
-    margin: 0 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    padding: 12px;
+    margin: 0;
+    padding: 0;
 }
-.components ul li{
+
+.components ul li {
     margin: 0 10px;
     font-size: larger;
-    /* color: rgb(141, 194, 240); */
-    
 }
-.components ul li a{
-    font-family: 'Merriweather', serif;
+
+.components ul li a {
     text-decoration: none;
     color: aliceblue;
-    /* border: 2px solid white; */
-    padding: 10px;
+    padding: 12px;
     border-radius: 20px;
 }
-.components ul li a:hover{
+
+.components ul li a:hover {
     background-color: #fff;
-    color: #fff;
+    color: #000;
     transition-duration: 0.5s;
 }
-button{
-    padding: 5px 25px;
-    cursor: pointer;
+
+.button {
+    margin-left: auto;
 }
-.btn{
+
+.btn {
     font-size: large;
-    font-family: 'Merriweather', serif;
     background-color: transparent;
     color: aliceblue;
     border: 2px solid white;
+    padding: 10px 25px;
+    cursor: pointer;
 }
+
+/* Hamburger icon */
+.line {
+    height: 8px;
+    width: 45px;
+    background: #fff;
+    margin: 5px auto;
+    display: none; /* Initially hide the hamburger icon */
+}
+
+@media only screen and (max-width: 768px) {
+    .components {
+        display: none;
+        position: fixed;
+        top: 100px; /* Adjust the distance from the top as needed */
+        left: 0;
+        width: 100%;
+        /* background-color: #333; */
+        flex-direction: column;
+        align-items: center;
+    }
+    .components ul li{
+        margin: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+    .components.open {
+        display: flex;
+        flex-direction: row; /* Change flex-direction to row when menu is open */
+        flex-wrap: wrap; /* Allow wrapping of items */
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .components.open ul {
+        flex-direction: column; /* Change flex-direction to column for list items */
+
+    }
+
+    .button {
+        display: none;
+    }
+
+    .line {
+        display: block; /* Show the hamburger icon */
+        margin-right: 30px;
+    }
+}
+

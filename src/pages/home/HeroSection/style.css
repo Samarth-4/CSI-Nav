@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Merriweather:wght@900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 body{
     margin: 10px;
     background: #070212;
@@ -7,11 +7,19 @@ body{
 }
 .section{
 }
+.grid{
+    padding: 20px;
+    /* margin-left: 20px; */
+    background-image: url("grid_back.png");
+    background-repeat: no-repeat;
+}
 .content{
     color: #fff;
     margin-top: 7vw;
     margin-bottom: 5vw;
-    font-family: Jura;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    
 }
 .l1{
     margin: 10px;
@@ -27,7 +35,8 @@ body{
 .btn1{
     margin: 0 20px;
     font-size: large;
-    font-family: 'Merriweather', serif;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
     background-color: transparent;
     color: aliceblue;
     border: 2px solid white;
