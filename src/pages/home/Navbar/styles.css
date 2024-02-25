@@ -9,6 +9,7 @@
 body {
     margin: 0;
     font-family: "Comfortaa", sans-serif;
+    background: #5551ff;
 }
 
 .bar {
@@ -16,15 +17,17 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 2vw;
+    height: 15vh;
+    position: fixed;
 }
 
 .logo img {
-    width: 100px;
+    width: 180px;
 }
 
 .components {
-    margin-left: 25vw;
-    margin-right: 22vw;
+    margin-left: 22vw;
+    margin-right: 20vw;
 }
 
 .components ul {
@@ -32,30 +35,54 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 30px;
+    height: 0vw;
 }
 
 .components ul li {
     margin: 0 10px;
     font-size: larger;
+    width: 1;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+}
+.components ul li a:hover{
+    background-color: rgb(239, 239, 239, 0.23);
+    color: #fff !important;
+    transition-duration: 0.5s;
+    border-radius: 20px;
+    /* opacity: 0.13; */
+    backdrop-filter: opacity(1);
+    filter: brightness(200%);
+    /* padding: 10px; */
 }
 
 .components ul li a {
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     padding: 12px;
     border-radius: 20px;
+    filter: brightness(200%);
 }
 
-.components ul li a:hover {
+/* .components ul li a:hover {
     background-color: #fff;
     color: #000;
-    transition-duration: 0.5s;
-}
+    transition-duration: 0.5s; */
+/* } */
 
 .button {
-    margin-left: auto;
+    margin-right: 20px;
+    font-family: "Comfortaa", sans-serif;
 }
-
+button:hover{
+    background-color: rgb(239, 239, 239, 0.23);
+}
 .btn {
     font-size: large;
     background-color: transparent;
@@ -101,9 +128,17 @@ body {
 
     .components.open ul {
         flex-direction: column; /* Change flex-direction to column for list items */
-
+        height: 50vw;
     }
-
+    .components.open ul li a:hover{
+        background-color: rgb(239, 239, 239, 0.23);
+        color: #fff !important;
+        transition-duration: 0.5s;
+        border-radius: 20px;
+        /* opacity: 0.13; */
+        backdrop-filter: opacity(1);
+        filter: brightness(200%);
+    }
     .button {
         display: none;
     }

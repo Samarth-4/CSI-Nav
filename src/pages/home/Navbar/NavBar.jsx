@@ -29,7 +29,7 @@
 
 import "./styles.css";
 import { useState } from "react"; // Import useState
-
+import logo from "../../../images/logo.png";
 export default function NavBar() {
     // State for managing navbar visibility on small screens
     const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +38,7 @@ export default function NavBar() {
         <>
             <div className="bar">
                 <div className="logo">
-                    <img src=".\Navbar\CSI_CU_LOGO-removebg-preview 1 2.png" alt="csi-logo" />
+                    <img src={logo} alt="csi-logo" />
                 </div>
                 <div className={`components ${isOpen ? 'open' : ''}`}>
                     <ul>
