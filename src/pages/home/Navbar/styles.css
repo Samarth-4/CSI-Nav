@@ -14,31 +14,34 @@ body {
 
 .bar {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    margin-top: 2vw;
+    /* margin-top: 2vw;
     height: 15vh;
-    position: fixed;
+    position: fixed; */
 }
-
+.l1{
+    
+}
 .logo img {
     width: 180px;
 }
 
-.components {
+/* .components {
     margin-left: 22vw;
     margin-right: 20vw;
-}
+} */
 
 .components ul {
     display: flex;
     list-style-type: none;
-    margin: 0;
+    margin-left: 20vw;
     padding: 0;
     border: 2px solid white;
     border-radius: 20px;
     padding: 30px;
     height: 0vw;
+    margin-right: 14vw;
 }
 
 .components ul li {
@@ -145,7 +148,13 @@ button:hover{
 
     .line {
         display: block; /* Show the hamburger icon */
-        margin-right: 30px;
+        margin-right: 10vw;
     }
 }
 
+@media only screen and (max-width: 1048px){
+    .components ul{
+        margin-left: 36px;
+        margin-right: 98px;
+    }
+}

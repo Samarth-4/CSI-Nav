@@ -27,6 +27,7 @@
 // }
 
 
+// import Hamburger from 'hamburger-react';
 import "./styles.css";
 import { useState } from "react"; // Import useState
 import logo from "../../../images/logo.png";
@@ -38,7 +39,7 @@ export default function NavBar() {
         <>
             <div className="bar">
                 <div className="logo">
-                    <img src={logo} alt="csi-logo" />
+                    <img src={logo} alt="csi-logo" className="l1"/>
                 </div>
                 <div className={`components ${isOpen ? 'open' : ''}`}>
                     <ul>
@@ -51,7 +52,7 @@ export default function NavBar() {
                 <div className="button">
                     <button className="btn btn-primary">Join Now</button>
                 </div>
-                <div className="line" onClick={() => setIsOpen(!isOpen)}></div> {/* Add this line for the hamburger icon */}
+                <div className="line" onClick={() => setIsOpen(!isOpen)}></div> 
             </div>
         </>
     );
